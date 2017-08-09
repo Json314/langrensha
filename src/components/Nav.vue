@@ -2,7 +2,7 @@
   <div class="nav">
     <el-row>
       <el-col :span="8"><div class="grid-content bg-purple Number_6 active" @click="choiceGameTye('/number_6',$event)">6人暗杀</div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple-light Number_9" @click="choiceGameTye('/number_9',$event)">9人暗杀</div></el-col>
+      <el-col :span="8"><div class="grid-content bg-purple-light Home Number_9" @click="choiceGameTye('/number_9',$event)">9人暗杀</div></el-col>
       <el-col :span="8"><div class="grid-content bg-purple-light Number_10" @click="choiceGameTye('/number_10',$event)">10人</div></el-col>
     </el-row>
   </div>

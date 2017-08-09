@@ -80,9 +80,8 @@
           var _this = this;
           $('.role').attr('src', './static/images/'+role[1]+'.jpg');
           this.title = role[0];
-          $('.role')[0].onload = function(){
-            _this.showDefaultImg = false;    //隐藏默认图片
-          }
+          _this.showDefaultImg = false;    //隐藏默认图片
+          // $('.role')[0].onload = function(){}
           this.role.splice(random, 1);
         }
       },
