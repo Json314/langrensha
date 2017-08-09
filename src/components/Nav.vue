@@ -13,13 +13,13 @@
   export default {
     name: 'nav',
     methods: {
-      choiceGameTye(url,event){
+      choiceGameTye: function(url,event){
         $('.nav .grid-content').removeClass('active');
         $(event.target).addClass('active');
         this.$router.push(url);
       }
     },
-    mounted(to, from, next){
+    mounted: function(to, from, next){
       $('.nav .grid-content').removeClass('active');
       $('.'+this.$route.name).addClass('active');
     }

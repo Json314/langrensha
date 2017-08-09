@@ -5,7 +5,7 @@
 <script>
   import tem from './Component.vue'
   export default {
-    data(){
+    data: function(){
       return {
         role: [['村民', 'cunmin', 'min'], ['预言家', 'yuyanjia', 'shen'], ['狼人', 'langren', 'lang'], ['守卫', 'shouwei', 'shen'], ['狼人', 'langren', 'lang'], ['村民', 'cunmin', 'min']],
         playerCount: 6,

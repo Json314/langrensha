@@ -57,7 +57,7 @@
   import $ from 'jquery'
   export default {
     props: ['role', 'playerCount', 'status'],
-    data(){
+    data: function(){
       return {
         title: '',
         showDefaultImg: true,
@@ -72,7 +72,7 @@
     },
     methods: {
       //选择角色，选择9次。每选择一次角色，显示确认角色
-      choiceRole(){
+      choiceRole: function(){
         if(this.index < (this.playerCount+1)){
           var random = Math.floor(Math.random()*this.role.length);   //随机抽取一个角色
           var role = this.role[random];
@@ -86,7 +86,7 @@
         }
       },
       //确认角色，确认8次，第9次，显示开始游戏
-      confirmRole(){
+      confirmRole: function(){
         if(this.index < this.playerCount){
           this.index++;
         }else{
@@ -96,7 +96,7 @@
         this.showDefaultImg = true;
         this.title = '';
       },
-      kill(event){
+      kill: function(event){
         if(event.target.nodeName == 'SPAN'){
           var target = $(event.target).parent();
         }else{
@@ -127,7 +127,7 @@
           });
         }
       },
-      begin(){
+      begin: function(){
         this.visible2 = false;
         this.beginGame = true;
         this.showDefaultImg = false;

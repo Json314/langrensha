@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 import Number_6 from '@/components/Number_6'
 import Number_9 from '@/components/Number_9'
 import Number_10 from '@/components/Number_10'
